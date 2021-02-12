@@ -41,7 +41,7 @@ modalCross.forEach((btn) => btn.addEventListener("click", closeModalValidation))
 // click on the button
 document.getElementById("btn-validation").addEventListener("click", closeModalValidation);
 
-// form valid
+// function validate
 
 function validate() {
   const forename = document.getElementById("first");
@@ -70,6 +70,8 @@ function validate() {
   checkRadio.forEach((radio) => {
     if (radio.checked !== false) hasRadioSelected = true;
   });
+
+  // messages error
 
   let valid = true;  
 
