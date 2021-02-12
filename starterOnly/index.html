@@ -14,26 +14,24 @@
   <body>
     <div class="topnav" id="myTopnav">
       <div class="header-logo">
-      <img alt="logo" src="Logo.png" width="auto" height="auto" />
-    </div>
-    <div class="main-navbar">
-      
-      <a href="#" class="active"><span>Accueil</span></a>
-      <a href="#"><span>Détails de l'évènement</span></a>
-      <a href="#"><span>À propos</span></a>
-      <a href="#"><span>Contact</span></a>
-      <a href="#"><span>Évènements passés</span></a>
-      <a href="javascript:void(0);" class="icon" onclick="editNav()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    </div>
-  </div>
+      <img alt="logo" class="logo" src="Logo.png"/>
+      </div>    
+      <div class="main-navbar">      
+        <a href="#" class="active"><span>Accueil</span></a>
+        <a href="#"><span>Détails de l'évènement</span></a>
+        <a href="#"><span>À propos</span></a>
+        <a href="#"><span>Contact</span></a>
+        <a href="#"><span>Évènements passés</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="editNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>  
+    </div>      
     <main>
       <div class="hero-section">
         <div class="hero-content">
           <h1 class="hero-headline">
-            Marathon national<br>
+            Marathon national<br />
             de jeux vidéos
           </h1>
           <p class="hero-text">
@@ -57,9 +55,8 @@
           <span class="close"></span>
           <p class= "text-validation thx">Merci ! Votre réservation a été valider</p>    
           <input
-          class="btn-submit"
-          type="submit"
-          class="button"
+          class="button btn-submit"
+          type="submit"          
           value="C'est parti"
           id="btn-validation"
           /> 
@@ -79,53 +76,53 @@
             >
               <div
                 class="formData">
-                <label for="first">Prénom</label><br>
+                <label for="first">Prénom</label><br />
                 <input
                   class="text-control"
                   type="text"
                   id="first"
                   name="first"                                   
-                /><br>
+                /><br />
                 <span class="missing" id="first-missing"></span>                                
               </div>
               
               <div
                 class="formData">
-                <label for="last">Nom</label><br>
+                <label for="last">Nom</label><br />
                 <input
                   class="text-control"
                   type="text"
                   id="last"
                   name="last"
-                /><br>
+                /><br />
                 <span class="missing" id="last-missing"></span>
               </div>
               <div
                 class="formData">
-                <label for="email">E-mail</label><br>
+                <label for="email">E-mail</label><br />
                 <input
                   class="text-control"
                   type="email"
                   id="email"
                   name="email"
-                /><br>
+                /><br />
                 <span class="missing" id="email-missing"></span>
               </div>
               <div
                 class="formData">
-                <label for="birthdate">Date de naissance</label><br>
+                <label for="birthdate">Date de naissance</label><br />
                 <input
                   class="text-control"
                   type="date"
                   id="birthdate"
                   name="birthdate"
-                /><br>
+                /><br />
                 <span class="missing" id="birthdate-missing"></span>
               </div>
               <div
                 class="formData">
-                <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
-                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"><br>
+                <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br />
+                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"><br />
                 <span class="missing" id="quantity-missing"></span>
               </div>
               <p class="text-label">Quelle ville ?</p>
@@ -207,23 +204,25 @@
                   id="checkbox1"
                   checked
                 />
-                <label class="checkbox2-label" for="checkbox1" id="checkbox1" required>
+                <label class="checkbox2-label" for="checkbox1" id="checkbox-required">
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
-                <br>                
-                <input class="checkbox-input" type="checkbox" id="checkbox2" />
+                <br />                
+                <input 
+                class="checkbox-input" 
+                type="checkbox" 
+                id="checkbox2" />
                 <label class="checkbox2-label" for="checkbox2">
                   <span class="checkbox-icon"></span>
                   Je Je souhaite être prévenu des prochains évènements.
                 </label>
-                <br>
+                <br />
                 <span class="missing" id="checkbox-missing"></span>
               </div>
               <input
-                class="btn-submit"
-                type="submit"
-                class="button"
+                class="button btn-submit"
+                type="submit"                
                 value="C'est parti"
               />                          
             </form>                      
