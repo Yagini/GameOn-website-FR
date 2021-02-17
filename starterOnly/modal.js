@@ -77,17 +77,17 @@ function validate() {
 
   if (forename.value.length < 2) {
     document.getElementById("first-missing").innerHTML =
-      "Veuillez entrer 2 caractères minimun pour le champ prénom";
+      "Veuillez entrer 2 caractères minimum pour le champ prénom";
     valid = false;
   }
   if (name.value.length < 2) {
     document.getElementById("last-missing").innerHTML =
-      "Veuillez entrer 2 caractères minimun pour le champ nom";
+      "Veuillez entrer 2 caractères minimum pour le champ nom";
     valid = false;
   }
   if (email.value == "") {
     document.getElementById("email-missing").innerHTML =
-      "Veuillez entrer un email valide";
+      "Veuillez entrer un e-mail valide";
     valid = false;
   }
   if (birthdate.value == "") {
@@ -107,7 +107,7 @@ function validate() {
   }  
   if (hasRadioSelected == false) {
     document.getElementById("radio-missing").innerHTML =
-      "il faut choisir une option";
+      "Il faut choisir une option";
     valid = false;
   }
   if (valid === true) {    
