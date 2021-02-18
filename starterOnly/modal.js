@@ -49,7 +49,7 @@ function validate() {
   const email = document.getElementById("email");
   const birthdate = document.getElementById("birthdate");
   const quantity = document.getElementById("quantity");
-  const checkbox = document.getElementById("checkbox-required");
+  const checkbox = document.getElementById("checkbox1");
   const checkRadio = document.getElementsByName("location"); // array
   
   // Etat des innerHTML si rien écrit ou pas d'erreur
@@ -69,7 +69,7 @@ function validate() {
   let hasRadioSelected = false;
   checkRadio.forEach((radio) => {
     if (radio.checked !== false) hasRadioSelected = true;
-  });
+  });  
 
   // messages error
 
